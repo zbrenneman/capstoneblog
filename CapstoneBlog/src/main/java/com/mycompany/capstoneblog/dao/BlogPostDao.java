@@ -5,10 +5,19 @@
  */
 package com.mycompany.capstoneblog.dao;
 
+import com.mycompany.capstoneblog.dto.BlogPost;
+import java.util.List;
+
 /**
  *
  * @author apprentice
  */
 public interface BlogPostDao {
+    
+    public BlogPost create(BlogPost blogPost);
+    public BlogPost read(Integer id);
+    public void update(BlogPost blogPost);
+    public void delete(BlogPost blogPost);
+    public List<BlogPost> listAll();
     
 }
